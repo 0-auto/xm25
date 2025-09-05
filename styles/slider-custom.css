@@ -1,0 +1,109 @@
+/* Slick Slider Custom Styles for Hero Section */
+
+/* スライダーの基本スタイル */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100vh;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100vh;
+  min-height: 1px;
+}
+
+.slick-slide.slick-active {
+  display: block;
+}
+
+/* ドットナビゲーション */
+.slick-dots {
+  position: absolute !important;
+  bottom: 30px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 12px !important;
+  z-index: 20 !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.slick-dots li button {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  display: block !important;
+  width: 12px !important;
+  height: 12px !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
+  background: transparent !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.slick-dots li button:hover {
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.slick-dots li.slick-active button {
+  border-color: #fbbf24 !important;
+  background: #fbbf24 !important;
+}
+
+/* フェード効果のための追加スタイル */
+.slick-fade .slick-slide {
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.slick-fade .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.slick-fade .slick-slide.slick-current {
+  opacity: 1;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: 20px !important;
+    gap: 8px !important;
+  }
+  
+  .slick-dots li button {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}

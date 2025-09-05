@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAL CAFE - 大阪市北区梅田の本格カフェ</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">HAL CAFE</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-page="home">ホーム</a>
+                <a href="#drinks" class="nav-link" data-page="drinks">ドリンク</a>
+                <a href="#food" class="nav-link" data-page="food">フード</a>
+                <a href="#access" class="nav-link" data-page="access">アクセス</a>
+                <a href="#contact" class="nav-link" data-page="contact">お問い合わせ</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="page active">
+            <!-- Hero Slider Section -->
+            <section class="hero-section">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="https://picsum.photos/1920/1080?random=1" alt="HAL CAFE 店内の様子">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/1920/1080?random=2" alt="バリスタのラテアート">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/1920/1080?random=3" alt="コーヒーと美味しい料理">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/1920/1080?random=4" alt="温かい店内の雰囲気">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/1920/1080?random=5" alt="こだわりのコーヒー豆">
+                            <div class="slide-overlay"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-content">
+                        <h1 class="hero-title">HAL CAFE</h1>
+                        <p class="hero-subtitle">大阪市北区梅田で味わう、本格的なラテアートと心温まるひととき</p>
+                        <p class="hero-description">
+                            実力派バリスタによるこだわりのラテアートと、<br>
+                            ヨーロピアンテイストの上質な空間でお待ちしております。
+                        </p>
+                    </div>
+                    
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="container">
+                    <h2 class="section-title">HAL CAFEの特徴</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <h3>実力派バリスタ</h3>
+                            <p>経験豊富なバリスタが一杯一杯丁寧に淹れる、こだわりのコーヒーとラテアートをお楽しみください。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>心温まる空間</h3>
+                            <p>ヨーロピアンアンティークインテリアに囲まれた、落ち着いた雰囲気の中でゆったりとしたひとときを。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>くつろぎの時間</h3>
+                            <p>友人との語らいや一人の時間、どちらも心地よく過ごせる、温かみのある空間づくりを心がけています。</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>こだわりの品質</h3>
+                            <p>厳選されたコーヒー豆と新鮮な食材を使用し、時間をかけて丁寧に作り上げた品質の高い商品を提供します。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h2>HAL CAFEについて</h2>
+                            <p>
+                                大阪市北区梅田にあるHAL CAFEは、実力派バリスタによるこだわりのラテアートと、
+                                ヨーロピアンテイストの温かい空間が自慢のカフェです。
+                            </p>
+                            <p>
+                                厳選されたヨーロピアンブレンドやシングルオリジンコーヒー、
+                                ふわふわラテと相性抜群のマフィン、健康的な食事とパティシエこだわりのスイーツまで、
+                                幅広いメニューでお客様をお迎えしています。
+                            </p>
+                            <p>
+                                シンプルで温かみのあるアンティークインテリアの店内で、
+                                高級感がありながら温かく落ち着いた雰囲気の中、
+                                特別なひとときをお過ごしください。
+                            </p>
+                        </div>
+                        <div class="about-image">
+                            <img src="https://picsum.photos/600/400?random=6" alt="HAL CAFE 店内">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Other pages (placeholder) -->
+        <section id="drinks-page" class="page">
+            <div class="container page-content">
+                <h1>ドリンクメニュー</h1>
+                <p>準備中...</p>
+            </div>
+        </section>
+
+        <section id="food-page" class="page">
+            <div class="container page-content">
+                <h1>フードメニュー</h1>
+                <p>準備中...</p>
+            </div>
+        </section>
+
+        <section id="access-page" class="page">
+            <div class="container page-content">
+                <h1>店舗アクセス</h1>
+                <p>準備中...</p>
+            </div>
+        </section>
+
+        <section id="contact-page" class="page">
+            <div class="container page-content">
+                <h1>お問い合わせ</h1>
+                <p>準備中...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HAL CAFE</h3>
+                    <p>大阪市北区梅田の本格カフェ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>営業時間</h4>
+                    <p>月～金: 7:00 - 22:00</p>
+                    <p>土日祝: 8:00 - 23:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>アクセス</h4>
+                    <p>〒530-0001</p>
+                    <p>大阪市北区梅田1-1-1</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HAL CAFE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/slider.js"></script>
+</body>
+</html>
